@@ -27,7 +27,7 @@ end;
 
 {main program}
 var
-  a, b: integer;
+  a, b, c: integer;
 
 begin
   writeln('Enter two numbers:');
