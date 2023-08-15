@@ -1,41 +1,38 @@
-program testing002;
+program split_string;
 
-uses
-  {$IFDEF UNIX}
-  cthreads,
-  {$ENDIF}
-  Classes
-  { you can add units after this };
+uses SysUtils;
 
-{function here}
-function myFunc(num1, num2:integer):real;
+
 var
-  return_value :real;
-begin
-   return_value := num1 / num2;
-   myFunc := return_value;
-end;
+  A: TStringArray;
+  inputStr, word: string;
+  word2: string;
+  count: integer;
 
 
 
-
-
-
-
-
-
-
-{main program}
-var
-  a, b, c: integer;
 
 begin
-  writeln('Enter two numbers:');
-  readln(a,b);
-  write(a,' divided by ', b, ' = ');
-  writeln(myFunc(a,b):0:3);
+  writeln('Input a sentence: ');
+  readln(inputStr);
+  A := inputStr.Split(' ');
+  for word in A do
+  begin
+    Writeln(word);
+  end;
 
+  writeln('Which word do you want to search?');
+  readln(word2);
+  word := A[0];
+  count := 0;
+  for word in A do
+  begin
 
+    if CompareText(word,word2) = 0 then
+      count := count+1;
 
-  readln
+  end;
+  writeln('The word "', word2, '" is used for ', count, ' times');
+
+  Readln;
 end.
