@@ -15,13 +15,13 @@ begin
   wc := 0;
 
   for word in A do
-  begin
-    if A <> 0, then
+  begin  
+    if A <> 0 , then
     wc = wc + 1;
     Writeln(word);
   end;
-  if wc > 10, then
-  Writeln('This sentence is too long!') 
+  if wc > 15, then
+  Writeln('This sentence is too long!');
 
   Readln;
 end
