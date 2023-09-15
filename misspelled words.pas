@@ -21,8 +21,7 @@ begin
          ms := ms + 1;
          Writeln(word);
   end;
-  //if (wc > 12) then
-  //Writeln('This sentence is too long!', wc );
+  
   writeln('You got ', ms, ' words wrong');
   Readln;
 end.
