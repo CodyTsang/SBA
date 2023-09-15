@@ -10,8 +10,6 @@ var
   count: integer;
 
 
-
-
 begin
   writeln('Input a sentence: ');
   readln(inputStr);
