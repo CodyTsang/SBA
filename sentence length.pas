@@ -6,6 +6,7 @@ var
   A: TStringArray;
   inputStr, word: string;
   wc :integer;
+  
 
 begin
   writeln('Input a sentence: ');
