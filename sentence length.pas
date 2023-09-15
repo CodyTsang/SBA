@@ -18,9 +18,9 @@ begin
   begin  
     if A <> 0 , then
     wc = wc + 1;
-    Writeln(word);
+  Writeln(word);
   end;
-  if wc > 15, then
+  if wc > 15 , then
   Writeln('This sentence is too long!');
 
   Readln;
