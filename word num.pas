@@ -11,7 +11,7 @@ var
 
 
 begin
-  writeln('Input a sentence: ');
+  writeln('Input a passage: ');
   readln(inputStr);
   A := inputStr.Split(' ');
   for word in A do
