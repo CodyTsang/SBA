@@ -8,6 +8,7 @@ var
   ms : integer;
   B: array[0..2] of string=('he', 'she', 'it');
   i:integer;
+  v:boolean;
 
 function compare(w,to_find:string):string;
 var
@@ -15,11 +16,13 @@ var
 
 begin
     str := w;
+    v := true;
    //writeln(Length(str));
-    writeln(str[Length(str)]);
-    writeln(to_find);
+    //writeln(str[Length(str)]);
+    //writeln(to_find);
     if (str[Length(str)] <> to_find) then
-         writeln('no s');
+       v:=false;
+
 
     //else
       //ms:=
@@ -43,9 +46,11 @@ begin
          compare(A[i+1], 's');
 
 
-         Writeln(word);
   end;
-
+      if (v=false) then
+          writeln('no s');
+          Writeln(word);
+          ms:=ms+1;
   writeln('You got ', ms, ' words wrong');
   Readln;
 end.
