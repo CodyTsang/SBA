@@ -15,13 +15,16 @@ begin
   ms := 0;
 
   for word in A do
-  begin
+   begin
          for word2 in B do
-         if (word = word2) then
-         ms := ms + 1;
-         Writeln(word);
-  end;
-  
-  writeln('You got ', ms, ' words wrong');
+          if (word = word2) then
+          ms := ms + 1;
+          Writeln(word);
+   end;
+
+  if (ms > 0) then
+    writeln('You got ', ms, ' words wrong');
+  else 
+    writeln('No misspelled words are found");
   Readln;
 end.
