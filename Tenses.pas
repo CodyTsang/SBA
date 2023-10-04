@@ -23,12 +23,6 @@ begin
     if (str[Length(str)] <> to_find) then
        v:=false;
 
-
-    //else
-      //ms:=
-
-
-
 end;
 
 
@@ -37,7 +31,6 @@ begin
   readln(inputStr);
   A := inputStr.Split(' ');
   ms := 0;
-  //word='';
   for i := 0 to 3 do
   begin
          for word2 in B do
