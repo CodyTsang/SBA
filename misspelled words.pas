@@ -25,6 +25,6 @@ begin
   if (ms > 0) then
     writeln('You got ', ms, ' words wrong');
   else 
-    writeln('No misspelled words are found");
+    writeln('No misspelled words are found');
   Readln;
 end.
