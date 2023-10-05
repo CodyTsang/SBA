@@ -41,7 +41,7 @@ begin
 
   end;
       if (v=false) then
-          writeln('There should be a s in the word ', word);
+          writeln('There should be an s in the word ', word);
          // Writeln(word);
           ms:=ms+1;
   writeln('You got ', ms, ' words wrong');
