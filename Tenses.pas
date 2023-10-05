@@ -6,7 +6,7 @@ var
   A: TStringArray;
   inputStr, word, word2: string;
   ms : integer;
-  B: array[0..2] of string=('he', 'she', 'it');
+  B: array[0..5] of string=('he', 'she', 'it', 'He', 'She', 'It');
   i:integer;
   v:boolean;
 
@@ -31,7 +31,7 @@ begin
   readln(inputStr);
   A := inputStr.Split(' ');
   ms := 0;
-  for i := 0 to 3 do
+  for i := 0 to 99 do
   begin
          for word2 in B do
          if (A[i] = word2) then
